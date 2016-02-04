@@ -1,4 +1,4 @@
-class Ecm::References::Backend::ReferencesController < Itsf::Backend::BaseController
+class Ecm::References::Backend::ReferencesController < Itsf::Backend::Resource::BaseController
   include Controller::ActsAsPublishedConcern
   
   def self.resource_class

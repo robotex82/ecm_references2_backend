@@ -1,4 +1,4 @@
-class Ecm::References::Backend::CategoriesController < Itsf::Backend::BaseController
+class Ecm::References::Backend::CategoriesController < Itsf::Backend::Resource::BaseController
   def self.resource_class
     # Set the resource class here.
     #
