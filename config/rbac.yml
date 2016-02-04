@@ -1,0 +1,40 @@
+defaults:
+  permissions:
+    - ecm/references/backend/engine
+    - ecm/references/category/index
+    - ecm/references/category/show
+    - ecm/references/category/new
+    - ecm/references/category/create
+    - ecm/references/category/edit
+    - ecm/references/category/update
+    - ecm/references/category/destroy
+    - ecm/references/reference/index
+    - ecm/references/reference/show
+    - ecm/references/reference/new
+    - ecm/references/reference/create
+    - ecm/references/reference/edit
+    - ecm/references/reference/update
+    - ecm/references/reference/destroy
+  roles:
+    ecm/references/administrator:
+      - ecm/references/backend/engine
+      - ecm/references/category/index
+      - ecm/references/category/show
+      - ecm/references/category/new
+      - ecm/references/category/create
+      - ecm/references/category/edit
+      - ecm/references/category/update
+      - ecm/references/category/destroy
+      - ecm/references/reference/index
+      - ecm/references/reference/show
+      - ecm/references/reference/new
+      - ecm/references/reference/create
+      - ecm/references/reference/edit
+      - ecm/references/reference/update
+      - ecm/references/reference/destroy
+    ecm/references/reviewer:
+      - ecm/references/backend/engine
+      - ecm/references/category/index
+      - ecm/references/category/show
+      - ecm/references/reference/index
+      - ecm/references/reference/show

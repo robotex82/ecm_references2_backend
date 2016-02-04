@@ -1,0 +1,5 @@
+= table.association :category, url: ->(category) { category_path(category) }
+= table.column :name
+= table.column :description, class: 'truncate-chars truncate-chars-30'
+= table.timestamps
+= table.acts_as_published_actions

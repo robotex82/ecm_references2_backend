@@ -1,0 +1,6 @@
+de:
+  classes:
+    ecm/references/backend/engine: 'Referenzen'
+  routes:
+    mount:
+      ecm_references_backend: '/backend/referenzen'

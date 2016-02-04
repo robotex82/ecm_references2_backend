@@ -1,0 +1,7 @@
+.well
+  = form.input :locale, collection: I18n.available_locales, include_blank: true
+  = form.association :parent
+  = form.input :name
+
+.well
+  = form.editor :description, syntax: form.object.markup_language

@@ -1,0 +1,10 @@
+.well
+  = form.association :category
+  = form.input :name
+
+.well
+  = form.input :markup_language, collection: Ecm::References::markup_languages, include_blank: false
+  = form.input :description, input_html: { 'data-add-editor': true, 'data-editor-syntax': :textile }
+
+.well
+  = form.input :published, as: :boolean

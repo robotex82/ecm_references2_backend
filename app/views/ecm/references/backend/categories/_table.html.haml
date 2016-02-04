@@ -1,0 +1,6 @@
+= table.association :parent, url: ->(category) { category_path(category) }
+= table.column :locale
+= table.column :name
+= table.column :description, class: 'truncate-chars truncate-chars-30'
+= table.column :references_count
+= table.timestamps
