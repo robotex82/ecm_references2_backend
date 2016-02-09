@@ -1,6 +1,6 @@
 class Ecm::References::Backend::ReferencesController < Itsf::Backend::Resource::BaseController
   include Controller::ActsAsPublishedConcern
-  
+
   def self.resource_class
     # Set the resource class here.
     #
@@ -24,13 +24,13 @@ class Ecm::References::Backend::ReferencesController < Itsf::Backend::Resource::
 
   def permitted_params
     # Set the allowed params, for your create and update methods.
-    # 
+    #
     # Example: params
     #            .require(:ecm_references_reference)
     #              .permit(:title, :body)
-    # 
+    #
     params
       .require(:ecm_references_reference)
-        .permit(:ecm_references_category_id, :name, :markup_language, :description, :published)
+      .permit(:ecm_references_category_id, :name, :markup_language, :description, :published)
   end
 end

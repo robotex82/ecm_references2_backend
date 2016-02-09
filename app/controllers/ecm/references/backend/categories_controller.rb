@@ -22,13 +22,13 @@ class Ecm::References::Backend::CategoriesController < Itsf::Backend::Resource::
 
   def permitted_params
     # Set the allowed params, for your create and update methods.
-    # 
+    #
     # Example: params
     #            .require(:ecm_references_category)
     #              .permit(:title, :body)
-    # 
+    #
     params
       .require(:ecm_references_category)
-        .permit(:locale, :parent_id, :name, :description)
+      .permit(:locale, :parent_id, :name, :description)
   end
 end
