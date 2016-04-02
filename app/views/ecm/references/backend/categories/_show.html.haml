@@ -1,5 +1,5 @@
-= table.row :parent, as: :association, url: { id: table.model.parent }
+= table.row :parent, as: :association, url: { id: table.resource.parent }
 = table.row :name
-= table.row :description, as: :text, syntax: table.model.markup_language
+= table.row :description, as: :text, syntax: table.resource.markup_language
 = table.row :created_at
 = table.row :updated_at
